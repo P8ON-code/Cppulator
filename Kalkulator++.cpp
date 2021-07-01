@@ -118,7 +118,7 @@ S Calculator(std::vector<S>& tabNum, std::vector<char>& tabChar )
 }
 int main()
 {
-	std::cout<<"Welcome in C++ulator, calculator which respect proper order of operations! \n+ addition(2 + 2 == 4), -subtraction(4 - 2 == 2) \n* multiply(3 * 3 == 9), / division(2 / 2 == 1) \n^ power(2 ^ 2 == 4), ! root (4!2 == 2) \nAnd special operations : \n% percent(20 % 100 == 20) \n? Operation comparison(2 + 2 ? 3 - 1, result : operation nr.1 is bigger) \nOn end of operations always put 'n' or any other letter \n ";
+	std::cout<<"Welcome in C++ulator, calculator which respect proper order of operations! \n+ addition(2 + 2 == 4), - subtraction(4 - 2 == 2) \n* multiply(3 * 3 == 9), / division(2 / 2 == 1) \n^ power(2 ^ 2 == 4), ! root (4!2 == 2) \nAnd special operations : \n% percent(20 % 100 == 20) \n? Operation comparison(2 + 2 ? 3 - 1, result : operation nr.1 is bigger) \nOn end of operations always put 'n' or any other letter \n ";
 
 	for (;;)
 	{
