@@ -1,15 +1,12 @@
-﻿// Kalkulator++.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
-//
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 #include <math.h>
 typedef long double S;
-//Pierwiastki
-S fSqrt(S &numb, S lvl)
+S fSqrt(S &numb, S lvl) //root
 {
 	return pow(numb, (1 / lvl));
 }
-S Kalk(std::vector<S>& tabLiczb, std::vector<char>& tabChar )
+S Calculator(std::vector<S>& tabLiczb, std::vector<char>& tabChar )
 {
 	S ktNaj = 1;
 	for (;;)
@@ -139,7 +136,7 @@ int main()
 
 		std::vector<S> tabIntNawiasy;
 		std::vector<char>tabCharNawiasy;
-		Kalk(tabLiczb, tabChar);
+		Calculator(tabLiczb, tabChar);
 		
 		std::cin.get();
 		std::cin.get();
