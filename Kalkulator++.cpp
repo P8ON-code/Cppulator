@@ -19,19 +19,22 @@ S fSqrt(S& numb, S lvl) //root
 }
 S fLog(int baseNumb, int power) //Logarithm
 {
-	int exponent = 0;
-	while (pow(baseNumb, exponent) < power)
+	if (baseNumb > 0 && baseNumb != 1)
 	{
-		exponent += 1;
+		int exponent = 0;
+		while (pow(baseNumb, exponent) < power)
+		{
+			exponent += 1;
+		}
+
+		if ((pow(baseNumb, exponent) != power))
+		{
+			ERROR_report("ERROR::Logarithm exponent isn't Natural Number");
+		}
+
+		return exponent;
 	}
-
-	if ((pow(baseNumb, exponent) != power))
-	{
-		ERROR_report("ERROR::Logarithm exponent isn't Natural Number");
-	}
-
-	return exponent;
-
+	else ERROR_report("ERROR::Base of logarithm must be bigger than zero and can't be one");
 }
 S Calculator(std::vector<S>& tabNum, std::vector<char>& tabChar)
 {
